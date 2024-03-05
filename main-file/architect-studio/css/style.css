@@ -2294,7 +2294,8 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
         font-size: 44px;
     }
     .slider-area .slider-arrows{
-        display: none;
+        /*display: none;*/
+        
     }
     header .side-menu .navbar-brand img {
         max-width: 80%;
@@ -2369,7 +2370,12 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
         width: 100%;
     }
     .slider-area .slider-arrows {
-        display: none;
+        /*display: none;*/
+        position: static;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     .slider-area .bg-overlay {
         width: 100%;
