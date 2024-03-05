@@ -2372,7 +2372,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     .slider-area .slider-arrows {
         /*display: none;*/
         position: static;
-        margin-top: 70px;
+        margin-top: 90px;
         display: flex;
         align-items: center;
         flex-direction: column;
