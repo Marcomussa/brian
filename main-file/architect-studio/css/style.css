@@ -1510,7 +1510,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 .testimonial-sec .right-overlay{
     background-color: #202020;
-    top:120px;
+    top:10px;
 }
 .testimonial-sec .testimonial-area{
     background-color: #202020;
@@ -2020,41 +2020,73 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 
 .process-wrapp > .pro-step.midnight{
-    background: #41526b;
+    background: #FED51B;
 }
 
 .process-wrapp:hover .pro-step.midnight{
     -webkit-animation: itg_pulse_midnight 1s infinite;
     -o-animation: itg_pulse_midnight 1s infinite;
     animation: itg_pulse_midnight 1s infinite;
-    -webkit-box-shadow:0 0 0 0 rgb(65, 82, 107);
-    box-shadow:0 0 0 0 rgb(65, 82, 107);
+    -webkit-box-shadow:0 0 0 0 rgb(254, 213, 27);
+    box-shadow:0 0 0 0 rgb(254, 213, 27);
 }
 
-.process-wrapp > .pro-step.purple{
-    background: #9556f5;
-}
 
-.process-wrapp:hover .pro-step.purple{
-    -webkit-animation: itg_pulse_purple 1s infinite;
-    -o-animation: itg_pulse_purple 1s infinite;
-    animation: itg_pulse_purple 1s infinite;
-    -webkit-box-shadow:0 0 0 0 rgb(149, 86, 245);
-    box-shadow:0 0 0 0 rgb(149, 86, 245);
-}
 
-.process-wrapp > .pro-step.pink{
-    background: #f021b6;
-}
 
-.process-wrapp:hover .pro-step.pink{
-    -webkit-animation: itg_pulse_pink 1s infinite;
-    -o-animation: itg_pulse_pink 1s infinite;
-    animation: itg_pulse_pink 1s infinite;
-    -webkit-box-shadow:0 0 0 0 rgb(240, 33, 182);
-    box-shadow:0 0 0 0 rgb(240, 33, 182);
+@-webkit-keyframes itg_pulse_midnight {
+    0% {
+        -webkit-box-shadow: 0 0 0 5px rgba(65, 82, 107, 0.9);
+        box-shadow: 0 0 0 5px rgba(65, 82, 107, 0.9);
+    }
+    25% {
+        -webkit-box-shadow: 0 0 0 10px rgba(65, 82, 107, 0.6);
+        box-shadow: 0 0 0 10px rgba(65, 82, 107, 0.6);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(65, 82, 107, 0.3);
+        box-shadow: 0 0 0 15px rgba(65, 82, 107, 0.3);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 60px rgba(100, 48, 148, 0.1);
+        box-shadow: 0 0 0 20px rgba(100, 48, 148, 0.1);
+    }
 }
-
+@-o-keyframes itg_pulse_midnight {
+    0% {
+        box-shadow: 0 0 0 5px rgba(65, 82, 107, 0.9);
+    }
+    25% {
+        box-shadow: 0 0 0 10px rgba(65, 82, 107, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(65, 82, 107, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(100, 48, 148, 0.1);
+    }
+}
+@keyframes itg_pulse_midnight {
+    0% {
+        -webkit-box-shadow: 0 0 0 5px rgba(65, 82, 107, 0.9);
+        box-shadow: 0 0 0 5px rgba(65, 82, 107, 0.9);
+    }
+    25% {
+        -webkit-box-shadow: 0 0 0 10px rgba(65, 82, 107, 0.6);
+        box-shadow: 0 0 0 10px rgba(65, 82, 107, 0.6);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 15px rgba(65, 82, 107, 0.3);
+        box-shadow: 0 0 0 15px rgba(65, 82, 107, 0.3);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 60px rgba(100, 48, 148, 0.1);
+        box-shadow: 0 0 0 20px rgba(100, 48, 148, 0.1);
+    }
+}
+#blog-sec {
+    margin-top: 150px;
+}
 
 .standalone-row .stand-img-des{
     padding-left: 30px;
