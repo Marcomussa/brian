@@ -208,13 +208,13 @@
             </div>
             <div class="slider-img col-12 col-lg-6 wow fadeInRight" data-wow-delay=".8s" data-depth="0.1">
                 <div class="img-slide">
-                    <img src="architect-studio/img/slide1.jpg">
+                    <img src="images/rocket.png" id="rocket">
                 </div>
                 <div class="img-slide">
-                    <img src="architect-studio/img/slide2.jpg">
+                    <img src="images/space.png" id="space">
                 </div>
                 <div class="img-slide">
-                    <img src="architect-studio/img/slide3.jpg">
+                    <img src="images/astro.png" id="astro">
                 </div>
             </div>
         </div>
@@ -347,9 +347,8 @@ Stats sec End-->
             <div class="col-12 col-lg-4 text-center text-lg-left">
                 <div class="team-detail wow fadeInLeft">
                     <h4 class="heading">NUESTRO <span>EQUIPO</span></h4>
-                    <p class="text">
-                        Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.
-                    </p>
+                    <p class="team-text">
+                        El Motor que Impulsa Nuestro Éxito. Comprometido con la Excelencia y la Eficiencia en Cada Paso del Proceso                    </p>
                 </div>
             </div>
             <div class="col-12 col-lg-8">
@@ -419,8 +418,8 @@ Stats sec End-->
                     <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center text-center text-lg-left">
                         <div class="testimonial-details wow fadeInLeft">
                             <h4 class="heading">CLIENTES <span>SATISFECHOS</span></h4>
-                            <p class="text">
-                                Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy.
+                            <p class="clients-text">
+                                Nuestra Mejor Garantía: Historias Reales de Clientes Satisfechos con Nuestros Servicios de Logística Corporativa
                             </p>
                         </div>
                     </div>
@@ -666,29 +665,29 @@ Blogs section end-->
     <div class="container">
         
         <div class="text-center">
-            <h4 class="heading" style="color: #202020;">NUESTROS SERVICIOS<span></span></h4>
+            <h4 class="heading heading-service" style="color: #202020;">NUESTROS SERVICIOS<span></span></h4>
         </div>
 
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 service">
                 <div class="process-wrapp">
                     <span class="pro-step midnight"><i aria-hidden="true" class="fas fa-folder-open"></i></span>
                     <h4 class="service-heading">Analizamos y diseñamos estrategias para optimizar el uso de recursos, tiempo y espacio</h4>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 service">
                 <div class="process-wrapp">
                     <span class="pro-step midnight"><i aria-hidden="true" class="fas fa-code"></i></span>
                     <h4 class="service-heading">Evaluamos, seleccionamos e implementamos tecnologías de sistemas de gestión de almacenes</h4>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 service">
                 <div class="process-wrapp">
                     <span class="pro-step midnight"><i aria-hidden="true" class="fas fa-cog"></i></span>
                     <h4 class="service-heading">Ofrecemos programas de capacitación y formación para el personal de nuestros clientes</h4>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 service">
                 <div class="process-wrapp">
                     <span class="pro-step midnight"><i aria-hidden="true" class="fas fa-edit"></i></span>
                     <h4 class="service-heading">Brindamos servicios de seguimiento y análisis continuo de las operaciones</h4>
@@ -699,7 +698,7 @@ Blogs section end-->
 </section>
 
 <!--Contact section start-->
-<section class="contact-sec padding-bottom" style="padding-top: 150px;" id="contact-sec">
+<section class="contact-sec padding-bottom" id="contact-sec">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-7">
@@ -707,17 +706,23 @@ Blogs section end-->
                 <form class="row contact-form wow fadeInLeft" id="contact-form-data">
                     <div class="col-sm-12" id="result"></div>
                     <div class="col-12 col-md-5">
-                        <input type="text" name="userName" placeholder="Nombre" class="form-control">
+                        <input type="text" name="userName" placeholder="Nombre" class="form-control required">
                         <input type="email" name="userEmail" placeholder="Email *" class="form-control">
                         <input type="text" name="userSubject" placeholder="Asunto" class="form-control">
                     </div>
                     <div class="col-12 col-md-7">
                         <textarea class="form-control" name="userMessage" rows="6" placeholder="Mensaje *"></textarea>
                     </div>
+                    <div class="col-md-12">
+                        <div class="g-recaptcha" data-sitekey="6LelbJ8pAAAAANl2qxwLNkdLoDKix9CxYjOVZ-kq"></div>
+
+                    </div>
                     <div class="col-12">
-                        <a href="javascript:void(0);" class="btn yellow-btn rounded-pill w-100 contact_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> ENVIAR MENSAJE
+                        <input type="submit" class="btn yellow-btn rounded-pill w-100 contact_btn" id="submit-contactForm" value="ENVIAR MENSAJE">
+                        
+                        <!--<a href="javascript:void(0);" class="btn yellow-btn rounded-pill w-100 contact_btn"><i class="fa fa-spinner fa-spin mr-2 d-none" aria-hidden="true"></i> ENVIAR MENSAJE
                             <span></span><span></span><span></span><span></span><span></span>
-                        </a>
+                        </a>-->
                     </div>
                 </form>
             </div>
@@ -783,6 +788,10 @@ Blogs section end-->
 <!--Animated Cursor End-->
 
 <!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="architect-studio/js/form.js" defer></script>
 <script src="vendor/js/bundle.min.js"></script>
 <!-- Plugin Js -->
 <script src="vendor/js/jquery.appear.js"></script>
@@ -800,8 +809,23 @@ Blogs section end-->
 <script src="architect-studio/js/circle-progress.min.js"></script>
 <script src="architect-studio/js/TweenMax.min.js"></script>
 
-<script src="vendor/js/contact_us.js"></script>
 <script src="architect-studio/js/script.js"></script>
+
+<script>
+    function cambiarImagen() {
+        let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+        let isSmallScreen = window.matchMedia('(max-width: 991px)').matches
+
+        if (isMobile || isSmallScreen) {
+            document.getElementById('rocket').src = 'images/rocket-responsive.png'
+            document.getElementById('space').src = 'images/space-responsive.png'
+            document.getElementById('astro').src = 'images/astro-responsive.png'
+        } 
+    }
+
+    window.addEventListener('resize', cambiarImagen)
+    cambiarImagen()
+</script>
 
 </body>
 </html>
