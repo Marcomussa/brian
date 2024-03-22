@@ -1961,7 +1961,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 .process-wrapp > .service-heading{
     font-size: 22px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 300;
     margin-top: 20px;
 }
 
@@ -2745,5 +2745,14 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     }
     .contact-sec {
         padding-top: 50px;
+    }
+    .slider-area .slider-arrows .slider-arr {
+        background-color: #FED51B;
+    }
+    #blog-sec {
+        margin-top: 0px;
+    }
+    .heading-service {
+        font-size: 42px;
     }
 }
