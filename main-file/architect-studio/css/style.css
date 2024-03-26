@@ -60,7 +60,7 @@
     border-right: 0 solid white;
 }
 ::-webkit-scrollbar-thumb {
-    background: #ffc107;
+    background: #0bd0ac;
     width: 0;
     height: 25%;
     transition: .5s ease;
@@ -975,6 +975,17 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     top: 0;
 }
 /*slider style css*/
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+width: 100%;
+height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
 
 .slider-area .slider-detail{
     display: flex;
@@ -1014,15 +1025,19 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     height: 35px;
     width: 35px;
     border-radius: 50%;
-    background-color: #202020;
+    background-color: #0bd0ac;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .5s ease;
 }
-.slider-area .slider-arrows .slider-arr:hover{
-    background-color: #0BD0AC;
+.slider-area .slider-arrows .slider-arr i{
+    color: #202020;
 }
+.slider-area .slider-arrows .slider-arr:hover {
+    background-color: white;
+}
+
 .slider-area .slider-arrows .slider-arr-up{
     margin-bottom: 15px;
     padding-bottom: 1px;
@@ -1031,7 +1046,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     padding-top: 1px;
 }
 .slider-area .slider-arrows .slider-arr i{
-    color: #FFFFFF;
+    color: #202020;
     font-size: 16px;
 }
 .slider-area img{
@@ -1065,7 +1080,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     top: 0;
     right: 10px;
     bottom: 0;
-    left: -250px;
+    left: -300px;
     background-color:#202020;
 }
 .about-sec .services-area .services{
@@ -1721,7 +1736,8 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 
 .footer-social a {
-    color: #ffffff;
+    color: #202020;
+    background-color: #0BD0AC;
     display: block;
     width: 45px;
     height: 45px;
@@ -1741,8 +1757,8 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 
 .footer-social li a:hover{
-    background-color: #0BD0AC;
-    color: #202020;
+    background-color: white;
+    color: #0BD0AC;;
 }
 
 .company-about{
@@ -2765,3 +2781,4 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     background: #202020;
     margin-top: 10px;
 }
+
