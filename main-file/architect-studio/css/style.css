@@ -186,6 +186,7 @@ ul{margin-bottom: 0;}
 }
 .text-yellow{
     color:  #0BD0AC !important;
+    font-size: 56px;
 }
 .heading span{
     display: block;
@@ -312,8 +313,44 @@ ul{margin-bottom: 0;}
     z-index: -1;
 }
 
+.services-btn {
+    margin-top: 40px;
+    border: 2px solid  #0BD0AC;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #202020;
+    color: white;
+    font-size: 15px;
+    padding: 12px 30px 12px 30px;
+    transition: .8s ease;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.services-btn:hover{
+    border:solid 2px #202020;
+    color: #ffffff;
+}
+.services-btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color:  #0BD0AC;
+    transform: translateY(150%);
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+
+
 .anim-btn {
-    border: 1px solid  #0BD0AC;
+    border: 2px solid  #0BD0AC;
     border-radius: 0.5em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -323,7 +360,7 @@ ul{margin-bottom: 0;}
     z-index: 1;
     background-color: transparent;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     padding: 10px 30px 10px 30px;
     transition: .8s ease;
     font-family: 'Roboto', sans-serif;
@@ -331,7 +368,7 @@ ul{margin-bottom: 0;}
     text-decoration: none;
 }
 .anim-btn:hover{
-    border:solid 1px #202020;
+    border:solid 2px #202020;
 }
 .anim-btn span {
     position: absolute;
@@ -345,33 +382,33 @@ ul{margin-bottom: 0;}
 }
 
 .anim-btn:hover {
-    color: #ffffff;
+    color: #202020;
 }
 
-.anim-btn:hover span ,.black-btn:hover span,.yellow-btn:hover span,.white-trans-btn:hover span{
+.anim-btn:hover span ,.black-btn:hover span,.yellow-btn:hover span,.white-trans-btn:hover span, .services-btn:hover span{
     transform: translateY(0) scale(3.12);
 }
 
-.anim-btn span:nth-child(1) ,.black-btn span:nth-child(1) ,.yellow-btn span:nth-child(1),.white-trans-btn:hover span:nth-child(1) {
+.anim-btn span:nth-child(1) ,.black-btn span:nth-child(1) ,.yellow-btn span:nth-child(1),.white-trans-btn:hover span:nth-child(1), .services-btn:hover span:nth-child(1) {
     left: calc((1 - 1) * 25%);
     transition-delay: calc((1 - 1) * 0.1s);
 }
 
-.anim-btn span:nth-child(2)  ,.black-btn span:nth-child(2) ,.yellow-btn span:nth-child(2),.white-trans-btn:hover span:nth-child(2){
+.anim-btn span:nth-child(2)  ,.black-btn span:nth-child(2) ,.yellow-btn span:nth-child(2),.white-trans-btn:hover span:nth-child(2), .services-btn:hover span:nth-child(2){
     left: calc((2 - 1) * 25%);
     transition-delay: calc((2 - 1) * 0.1s);
 }
 
-.anim-btn span:nth-child(3) ,.black-btn span:nth-child(3),.yellow-btn span:nth-child(3),.white-trans-btn:hover span:nth-child(3){
+.anim-btn span:nth-child(3) ,.black-btn span:nth-child(3),.yellow-btn span:nth-child(3),.white-trans-btn:hover span:nth-child(3), .services-btn:hover span:nth-child(3){
     left: calc((3 - 1) * 25%);
     transition-delay: calc((3 - 1) * 0.1s);
 }
 
-.anim-btn span:nth-child(4) ,.black-btn span:nth-child(4) ,.yellow-btn span:nth-child(4),.white-trans-btn:hover span:nth-child(4) {
+.anim-btn span:nth-child(4) ,.black-btn span:nth-child(4) ,.yellow-btn span:nth-child(4),.white-trans-btn:hover span:nth-child(4), .services-btn:hover span:nth-child(4) {
     left: calc((4 - 1) * 25%);
     transition-delay: calc((4 - 1) * 0.1s);
 }
-.anim-btn span:nth-child(5) ,.black-btn span:nth-child(5) ,.yellow-btn span:nth-child(5),.white-trans-btn:hover span:nth-child(5){
+.anim-btn span:nth-child(5) ,.black-btn span:nth-child(5) ,.yellow-btn span:nth-child(5),.white-trans-btn:hover span:nth-child(5), .services-btn:hover span:nth-child(5){
     left: calc((5 - 1) * 25%);
     transition-delay: calc((5 - 1) * 0.1s);
 }
@@ -975,16 +1012,19 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     top: 0;
 }
 /*slider style css*/
-svg {
+.svg {
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-width: 100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     display: block;
-    background-color: #0e4166;
-background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+#svg {
+    width: 100%;
 }
 
 .slider-area .slider-detail{
@@ -1001,7 +1041,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading{
     color:  #0BD0AC;
     font-family: Oswald, sans-serif;
-    font-size: 70px;
+    font-size: 56px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -1193,19 +1233,19 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 /* ===================================
            team sec css
 ====================================== */
-.team-sec{}
 .team-sec .left-overlay{
     background-color:  #0BD0AC;
 }
-.team-sec .inner-team-sec{
-    background-color:  #0BD0AC;
-}
+
 .team-sec .heading{
     margin-bottom: 30px;
     color: #202020;
 }
 .team-sec .text{
     color: #202020;
+}
+.team-sec .inner-team-sec {
+   padding-top: 0px !important;
 }
 .team-sec .inner-team-sec .team-area{
     width: 80%;
@@ -1937,8 +1977,18 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
     font-weight: bold;
     font-size: 60px;
     color: #202020;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
+
+.inner-slider-content p {
+    font-size: 20px;
+}
+
+.sols-opt{
+    font-weight: 500;
+}
+
 .crumbs{
     position: relative;
 }
@@ -1975,7 +2025,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
 
 .process-wrapp > .service-heading{
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.5;
     font-weight: 300;
     margin-top: 20px;
@@ -2138,7 +2188,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
 
 .standalone-detail{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 .standalone-area .gradient-text1{
     font-family: 'Roboto', sans-serif;
@@ -2680,12 +2730,14 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 
 }
 
+
+
 @media (min-width: 1200px) {
     .slider-area .slider-arrows {
         right: -4%;
     }
     .slider-area .slider-detail .slider-slide .slider-inner-content .slide-text {
-        font-size: 14px;
+        font-size: 18px;
     }
     .testimonial-sec .testimonial-area .container {
         max-width: 1040px;
@@ -2749,7 +2801,7 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
 
 .contact-sec {
-    padding-top: 150px;
+    padding-top: 60px;
 }
 
 @media only screen and (max-width: 600px){
@@ -2773,12 +2825,89 @@ background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
     }
 }
 
+@media only screen and (max-width: 420px){
+    .text {
+        font-size: 16px !important;
+    }
+    .about-us-primary-sec {
+       padding-top: 40px;
+       padding-bottom: 60px; 
+    }
+    .about-us-primary-sec h4 {
+        font-size: 40px;
+    }
+    .about-us-primary-sec h4 span{
+        font-size: 36px;
+    }
+    .heading-service {
+        margin-bottom: 30px !important;
+    }
+    .service-heading {
+        font-size: 18px !important;
+    }
+    .container-servicios {
+       margin-top: 50px 0px !important; 
+       margin-bottom: 0px !important;
+    }
+    #nosotros-sec h4 {
+        font-size: 40px;
+    }
+    .team-text, .clients-text {
+        font-size: 20px !important;
+    }
+    .team-name {
+        font-size: 24px !important;
+    }
+    .testimonial-area {
+        padding-bottom: 50px !important;
+        padding-top: 50px !important;
+    }
+}
+
 .team-sec {
     background:  #0BD0AC;
 }
 
-#testimonial-sec {
+#clientes-sec {
     background: #202020;
     margin-top: 10px;
 }
 
+.shape {
+    position: absolute;
+    left: 0px;
+    z-index: 3;
+    filter: brightness(1,1); 
+    mix-blend-mode: multiply;
+}
+
+.heading-service {
+    margin-bottom: 60px;
+}
+
+.icon-solutions {
+    font-size: 70px;
+    color: #000
+}
+
+.solutions-icons {
+    margin-bottom: 50px;
+}
+
+.solutions-icons div {
+    margin: 20px 0px;
+}
+
+.solutions-icons div p {
+    margin-left: 25px;
+    font-size: 18px;
+    
+}
+
+.solutions-icons div i{
+    color: #0bd0ac;
+}
+
+.container-servicios {
+    margin: 80px 0px;
+}
