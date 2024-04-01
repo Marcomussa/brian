@@ -531,6 +531,7 @@ Stats sec End-->
                         </div>
                     </div>
                     <div class="col-12 col-lg-7 offset-lg-1">
+                        <img src="images/shape2.png" alt="" style="transform: translateY(50px);" class="shape" id="shape">
                         <div class="testimonial-carousel wow fadeInRight">
                             <div class="testimonial-box owl-carousel owl-theme">
                                 <div class="item text-center">
@@ -861,7 +862,18 @@ Blogs section end-->
 <script src="vendor/js/particles.min.js"></script>
 <script src="vendor/js/particles-config.js"></script>
 <script src="vendor/js/skrollr.js"></script>
+<script>
+    const elemento = document.querySelector('#shape');
 
+    const alturaInicial = parseFloat(window.getComputedStyle(elemento).getPropertyValue('transform').split(',')[5].trim());
+    const rangoMovimiento = 50; // Cuánto se mueve hacia arriba y hacia abajo
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        const valorTransform = alturaInicial + (rangoMovimiento * Math.sin(scrollY * 0.0025));
+        elemento.style.transform = `translateY(${valorTransform}px)`;
+    });
+</script>
 
 </body>
 </html>

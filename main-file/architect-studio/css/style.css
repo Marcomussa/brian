@@ -2832,6 +2832,13 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     .heading-service {
         font-size: 42px;
     }
+    .shape {
+        left: 60% !important;
+        top: 200px;
+        overflow: hidden;
+        z-index: 1;
+        width: 40%;
+    }
 }
 
 @media only screen and (max-width: 420px){
@@ -2882,13 +2889,6 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     margin-top: 10px;
 }
 
-.shape {
-    position: absolute;
-    left: 0px;
-    z-index: 3;
-    filter: brightness(1,1); 
-    mix-blend-mode: multiply;
-}
 
 .heading-service {
     margin-bottom: 50px;
@@ -2919,4 +2919,24 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 
 .container-servicios {
     margin-top: 80px;
+}
+
+.shape {
+    position: absolute;
+    left: 100%;
+    bottom: 0px;
+    transition: transform 0.3s;
+}
+
+[data-top-bottom] {
+    transition: transform 0.65s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes rotacion {
+    from {
+        transform: rotate(0deg); /* Inicia sin rotación */
+    }
+    to {
+        transform: rotate(360deg); /* Termina con una rotación completa */
+    }
 }
