@@ -22,19 +22,20 @@ jQuery(function ($) {
     /* ===================================
            Header appear
         ====================================== */
-    if($('.slider-area').length) {
-        var slider_top = $(".slider-area").offset().top;
+    if($('.title-section').length) {
+        var slider_top = $(".title-section").offset().top;
+        console.log(slider_top)
 
         $(window).on('scroll', function () {
 
             if ($(this).scrollTop() > 260) { // Set position from top to add class
 
-                if($('.slider-area').css({"margin-top":slider_top})) {
+                if($('.title-section').css({"margin-top":slider_top})) {
                     $('.inner-header').addClass('header-appear');
                     $(".aimated-cursor").css({ top: '-150px' });
                 }
             } else {
-                if($('.slider-area').css({"margin-top":"0"})) {
+                if($('.title-section').css({"margin-top":"0"})) {
                     $('.inner-header').removeClass('header-appear');
                     $(".aimated-cursor").css({ top: '0' });
                 }
