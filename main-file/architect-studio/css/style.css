@@ -2064,7 +2064,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     transition: all .3s ease;
 }
 
-.process-wrapp:hover > .pro-step::before {
+.pro-step::before {
     content: "";
     background: transparent;
     top: 1px;
@@ -2099,7 +2099,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     background:  #0BD0AC;
 }
 
-.process-wrapp:hover .pro-step.midnight{
+.pro-step.midnight{
     -webkit-animation: itg_pulse_midnight 1s infinite;
     -o-animation: itg_pulse_midnight 1s infinite;
     animation: itg_pulse_midnight 1s infinite;
@@ -2572,7 +2572,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
         margin-bottom: 50px;
     }
     .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
-        font-size: 40px;
+        font-size: 46px;
     }
     .slider-area .slider-detail .slider-slide .slider-inner-content .slide-text {
         width: 100%;
