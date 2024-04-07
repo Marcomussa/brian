@@ -986,6 +986,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 ====================================== */
 
 .slider-area{
+    margin-top: 20px;
     position: relative;
     /*margin-top: -40px;*/
     /*height: 100vh;*/
@@ -1671,7 +1672,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     border-radius: 0;
     border:solid 2px #eceef2;
 }
-.contact-sec .contact-form input::placeholder{
+.contact-sec .contact-form input::placeholder, textarea::placeholder{
     color: #8799a3;
     font-size: 16px;
 }
@@ -1679,7 +1680,6 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     padding: 13px;
     padding-left: 25px;
     height: 202px;
-    color: #8799a3;
     font-size: 16px;
 }
 .contact-sec .contact-form .black-btn{
@@ -3016,9 +3016,11 @@ width: 200px;
 }
 
 .title-section {
-    background-color: #202020;
-    margin-bottom: 10px;
+    background-image: url("../img/bg-main.png");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
     padding: 100px 0px;
+    height: 600px;
 }
 
 .title-section h1{
@@ -3070,4 +3072,47 @@ width: 200px;
 
 @keyframes blink {
     50% { opacity: 0 }
+}
+
+.slider-area img{
+    width: 100%;
+    border-radius: 1%;
+}
+
+.partners {
+    padding: 30px 0px;
+    background-color: #f8f8f8;
+    border-radius: 2%;
+}
+
+.partners h2{
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.partners h2 span {
+    color: #0BD0AC;
+}
+
+.partners .row .col-md-4:nth-child(1) img:hover{
+    filter: contrast(5);
+}
+
+.partners .row .col-md-4:nth-child(2) img:hover, .partners .row .col-md-4:nth-child(3) img:hover{
+    filter: brightness(5);
+}
+
+.partners .row .col-md-4:nth-child(1){
+    text-align: right;
+}
+
+.partners .row .col-md-4:nth-child(2){
+    text-align: center;
+}
+
+.partners .row .col-md-4:nth-child(3){
+    text-align: left;
 }
