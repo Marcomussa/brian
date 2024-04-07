@@ -147,13 +147,17 @@ ul{margin-bottom: 0;}
 .color-lines .row{
     height: 25px;
 }
+.main-color{
+    background-color: #0bd0ac;
+
+}
 .color-line-overlay{
     position: absolute;
     right: 0;
     top:0;
     height: 25px;
     left: 50%;
-    background-color: #202020;
+    background-color: #0bd0ac;
 }
 .bg-color{
     background-color: #202020;
@@ -529,21 +533,25 @@ header .main-navigation nav .navbar-nav .nav-item{
 }
 header .main-navigation nav .navbar-nav .nav-item .nav-link{
     padding-top: 0;
-    color: #202020;
+    color: white;
     font-family: Oswald, sans-serif;
     font-size: 16px;
     font-weight: 500;
     transition: .5s ease;
 }
+header .main-navigation nav .navbar-nav .nav-item .nav-link:hover {
+    color: #0bd0ac;
+}
 header .main-navigation nav .navbar-nav .nav-item .nav-link span{
     font-weight: 300;
     font-size: 36px;
     display: inline-block;
-    color: #202020;
+    color: white;
     opacity: .3;
 }
 header .main-navigation nav .navbar-nav .nav-item .nav-link span.num-nav{
     min-width: 20px;
+    color: white;
 }
 header .main-navigation nav .navbar-nav .nav-item .nav-link span:last-child{
     margin-right: 5px;
@@ -566,7 +574,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     right: 0;
     top:0;
     z-index: 1111;
-    background-color: #FFFFFF;
+    background-color: #202020 !important;
     -webkit-animation-name: animationFade;
     animation-name: animationFade;
     -webkit-animation-duration: 1s;
@@ -760,11 +768,12 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     right: 30px;
     top: 73px;
     display: inline-block;
+    color: white;
 }
 .sidemenu_btn span {
     height: 2px;
     width: 100%;
-    background: #202020;
+    background: white;
     display: block;
     margin: auto;
     transition: .5s ease;
@@ -1096,13 +1105,10 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 /* ===================================
       About Us
   ==================================== */
-.about-sec{
-    padding-top: 10px;
-}
 .about-sec .about-overlay{
     position: absolute;
     display: block;
-    top: 10px;
+    top: 0px;
     right: 0;
     bottom: 0;
     left: 60%;
@@ -1119,7 +1125,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     position: absolute;
     display: block;
     top: 0;
-    right: 10px;
+    right: 0px;
     bottom: 0;
     left: -300px;
     background-color:#202020;
@@ -3040,12 +3046,17 @@ width: 200px;
     }
 }
 
-.title-section {
+.bg  {
     background-image: url("../img/bg-main.png");
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.title-section {
     background-repeat: no-repeat;
     margin-bottom: 20px;
     padding: 100px 0px;
-    height: 600px;
+    height: 100%
 }
 
 .title-section h1{
@@ -3114,12 +3125,16 @@ width: 200px;
     text-align: center;
     margin-bottom: 50px;
     font-size: 3.5rem;
-    font-family: Roboto;
+    font-family: Oswald;
     font-weight: 700;
 }
 
 .partners h2 span {
     color: #0BD0AC;
+}
+
+.partners .row .col-md-4 img {
+    width: 50%;
 }
 
 .partners .row .col-md-4:nth-child(1) img:hover{
@@ -3140,4 +3155,8 @@ width: 200px;
 
 .partners .row .col-md-4:nth-child(3){
     text-align: left;
+}
+
+.inner-header {
+    background: none
 }
