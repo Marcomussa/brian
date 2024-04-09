@@ -175,10 +175,10 @@
                     <p class="title-subtext">Transformamos procesos para maximizar eficiencia y valor.</p>
                 </div>
                 <div class="col-md-12 btn-main-container">
-                    <a href="https://calendly.com/brian-horenrudaeff" target="_blank" class="btn anim-btn rounded-pill scroll btn-header">Agenda una Llamada
+                    <a href="#contact-sec" class="btn anim-btn rounded-pill scroll btn-header">Agenda una Llamada
                         <span></span><span></span><span></span><span></span>
                     </a>
-                    <a href="#about-sec" class="btn anim-btn rounded-pill scroll btn-header" target="_blank">CONOCE MAS
+                    <a href="#about-sec" class="btn anim-btn rounded-pill scroll btn-header" >CONOCE MAS
                         <span></span><span></span><span></span><span></span>
                     </a>
                 </div>
@@ -801,16 +801,10 @@ Blogs section end-->
             </div>
             <div class="col-12 col-lg-5 text-center text-lg-left position-relative">
                 <div class="contact-details wow fadeInRight">
-                    <h4 class="heading">NUESTRA UBICACION</h4>
-                    <p class="text">
-                    </p>
-                    <ul>
-                        <li><i class="las la-map-marker addr"></i>DIRECCION </li>
-                        <li><i class="las la-phone-volume phone"></i>
-                        <span>TELEFONO</span>
-                        </li>
-                        <li><i class="las la-paper-plane email"></i>EMAIL</li>
-                    </ul>
+                    <h4 class="heading">AGENDA UNA REUNION</h4>
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/brian-horenrudaeff/30min" style="min-width:320px;height:500px;"></div>
+                    <!-- Calendly inline widget end -->
                 </div>
                 <img src="architect-studio/img/contact-background.png" class="contact-background" alt="contact">
             </div>
@@ -888,6 +882,8 @@ Blogs section end-->
 <script src="vendor/js/particles.min.js"></script>
 <script src="vendor/js/particles-config.js"></script>
 <script src="vendor/js/skrollr.js"></script>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
 
 <script>
     const elemento = document.querySelector('#shape');
