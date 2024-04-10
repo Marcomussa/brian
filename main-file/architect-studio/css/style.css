@@ -178,7 +178,11 @@ ul{margin-bottom: 0;}
     font-weight: 700;
     margin-bottom: 50px;
 }
-
+.owl-item .item .text{
+    color: black;
+    font-size: 22px;
+    line-height: 30px;
+}
 .text{
     color: #FFFFFF;
     font-family: Roboto, sans-serif;
@@ -535,7 +539,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link{
     padding-top: 0;
     color: white;
     font-family: Oswald, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     transition: .5s ease;
 }
@@ -560,7 +564,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link:hover{
     /*color:  #0BD0AC;*/
 }
 header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
-    color:  #0BD0AC;
+    color:  #0BD0AC !important;
     opacity: 1;
 }
 
@@ -568,13 +572,16 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 /* ===================================
          header appear css
 ====================================== */
+header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link span {
+    color: black;
+}
 .header-appear{
     position: fixed;
     left: 0;
     right: 0;
     top:0;
     z-index: 1111;
-    background-color: #202020 !important;
+    background-color: white !important;
     -webkit-animation-name: animationFade;
     animation-name: animationFade;
     -webkit-animation-duration: 1s;
@@ -754,6 +761,10 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     transform: rotate(-45deg);
 }
 
+header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
+    color: black;
+}
+
 /*side open btn*/
 
 .sidemenu_btn {
@@ -766,7 +777,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     margin-top: .4rem;
     position: absolute;
     right: 30px;
-    top: 73px;
+    top: 55px;
     display: inline-block;
     color: white;
 }
@@ -1003,7 +1014,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 
 .slider-area .bg-overlay{
-    background-color:#202020;
+    background-color:#f9f9f9;
     width: 100%;
     left: 0;
 }
@@ -1013,7 +1024,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     padding-bottom: 100px;
 }
 .slider-area .container .inner-bg-overlay{
-    background-color:#202020;
+    background-color:#f9f9f9;
     position: absolute;
     /*width: 50%;*/
     left: 0;
@@ -1051,7 +1062,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading{
     color:  #0BD0AC;
     font-family: Oswald, sans-serif;
-    font-size: 56px;
+    font-size: 72px;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -1059,7 +1070,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     display: block;
 }
 .slider-area .slider-detail .slider-slide .slider-inner-content .slide-text{
-    color: white;
+    color: black;
     font-weight: 300;
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -1571,11 +1582,11 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     /*padding-top: 120px;*/
 }
 .testimonial-sec .right-overlay{
-    background-color: #202020;
+    background-color: #f9f9f9;
     top:10px;
 }
 .testimonial-sec .testimonial-area{
-    background-color: #202020;
+    background-color: #f9f9f9;
 }
 .testimonial-sec .testimonial-area .container{
     max-width: 1140px;
@@ -1610,10 +1621,16 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     width: 100%;
 }
 .testimonial-sec .testimonial-area .testimonial-carousel .testimonial-box .user-name{
-    color: #FFFFFF;
+    color: black;
     font-size: 24px;
     font-weight: 400;
     font-family: Roboto, sans-serif;
+}
+.fa-quote-right:before {
+    color: black;
+}
+.testimonial-details .heading {
+    color: black;
 }
 /* ===================================
         Our Cast sec css
@@ -1968,7 +1985,6 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #202020;
 }
 .slider-sec .inner-overlay{
     position: absolute;
@@ -1976,13 +1992,12 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     bottom: 0;
     left: 0;
     right: 20%;
-    background-color: #202020;
 }
 .slider-sec .inner-slider-content h4{
     font-family:Oswald, sans-serif;
     font-weight: bold;
     font-size: 60px;
-    color: white;
+    color: #202020;
     margin-bottom: 25px;
     margin-top: 15px;
 }
@@ -1993,11 +2008,12 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 
 .inner-slider-content p {
     font-size: 20px;
-    color: white
+    color: #202020
 }
 
 .slider-sec .inner-slider-content p{
-    color: white;
+    color: #202020;
+    font-weight: 300;
 }
 
 .slider-sec .inner-slider-content p:nth-child(2){
@@ -2105,7 +2121,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
     background:  #0BD0AC;
 }
 
-.pro-step.midnight{
+.pro-step.midnight:hover {
     -webkit-animation: itg_pulse_midnight 1s infinite;
     -o-animation: itg_pulse_midnight 1s infinite;
     animation: itg_pulse_midnight 1s infinite;
@@ -2806,7 +2822,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 
 .clients-text {
-    color: white
+    color: black
 }
 
 .g-recaptcha {
@@ -2984,7 +3000,7 @@ header .main-navigation nav .navbar-nav .nav-item .nav-link.active span{
 }
 
 #clientes-sec {
-    background: #202020;
+    background: #f9f9f9;
 }
 
 
@@ -3117,7 +3133,6 @@ width: 200px;
 
 .partners {
     padding: 60px 0px;
-    background-color: #f8f8f8;
     border-radius: 2%;
 }
 
