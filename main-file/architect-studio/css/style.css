@@ -3061,15 +3061,24 @@ width: 200px;
         transform: rotate(360deg); /* Termina con una rotación completa */
     }
 }
-
+/*
 .bg  {
     background-image: url("../img/bg-main.png");
     background-repeat: no-repeat;
     height: 700px;
+}*/
+.video-container {
+    width: 100%;
+    position: absolute;
+    height: 900px;
+    overflow: hidden;
+}
+
+.partners {
+    margin-top: 400px;
 }
 
 .title-section {
-    background-repeat: no-repeat;
     margin-bottom: 20px;
     padding: 100px 0px;
     height: 100%
@@ -3079,6 +3088,11 @@ width: 200px;
     color: white;
     font-size: 7rem;
     font-family: oswald;
+}
+
+.title-section .container {
+  
+
 }
 
 .title-subtext {
@@ -3173,6 +3187,6 @@ width: 200px;
 }
 
 .inner-header {
-    background: none
+    background: red
 }
 
