@@ -2555,7 +2555,8 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
         display: none;
     }
     .sidemenu_btn {
-        top: 65px;
+        top: 35px;
+        margin-right: 0px;
     }
     .side-menu .inner-wrapper {
         padding: 3.5rem 3rem;
@@ -2567,8 +2568,14 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
         font-size: 13px;
     }
     .header-appear .sidemenu_btn {
-        top: 45px;
-        right: 0;
+        top: 20px;
+        right: 10px;
+    }
+    .partners {
+        margin-top: 320px !important;
+    }
+    .sidemenu_btn span {
+        background: #0bd0ac
     }
     .header-appear ~ .side-menu .btn-close {
         top: 30px;
