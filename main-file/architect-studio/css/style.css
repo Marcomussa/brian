@@ -2601,7 +2601,7 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
         margin-bottom: 50px;
     }
     .slider-area .slider-detail .slider-slide .slider-inner-content .slide-heading {
-        font-size: 46px;
+        font-size: 44px;
     }
     .slider-area .slider-detail .slider-slide .slider-inner-content .slide-text {
         width: 100%;
@@ -2849,9 +2849,23 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
     padding-top: 60px;
 }
 
+.text-area::placeholder {
+    color: #8799a6;
+}
+
 @media only screen and (max-width: 600px){
     .services-btn {
        margin-top: 50px; 
+       width: 85%;
+    }
+    .btn-solutions a {
+        width: 100%;
+    }
+    .btn-main-container a:nth-child(2) {
+        margin-top: 0px;
+    }
+    input[type="submit"]{
+        margin-top: 10px;
     }
     footer .row div p {
         margin-top: 20px;
