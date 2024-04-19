@@ -2862,10 +2862,10 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
     }
     
     .partners .row .col-md-3 img {
-        filter: brightness(100%) !important;
+        filter: brightness(30%) !important;
     }
     .partners div div img {
-        width: 60% !important;
+        width: 40% !important;
     }
     .partners div div:nth-child(2) img {
         margin: 20px 0px;
