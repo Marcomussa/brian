@@ -2860,10 +2860,6 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
         margin-bottom: 0px !important;
         padding-bottom: 50px !important;
     }
-    
-    .partners .row .col-md-3 img {
-        filter: brightness(30%) !important;
-    }
     .partners div div img {
         width: 40% !important;
     }
@@ -3206,7 +3202,6 @@ width: 200px;
 
 .partners .row .col-md-3 img {
     width: 90%;
-    filter: brightness(20%);
 }
 
 .partners .row .col-md-3 img:hover {
@@ -3214,12 +3209,12 @@ width: 200px;
     filter: brightness(100%)
 }
 
-.partners .row .col-md-3:nth-child(3) img:hover {
-    filter: brightness(5)
-}
 
 .swiper-slide, .swiper-wrapper {
     width: 100%;
     height: 100%;
     transition-property: transform;
+    transition-duration: 10000ms;
+    transform: translate3d(-2449.55px, 0px, 0px);
 }
+
