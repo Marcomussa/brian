@@ -1318,16 +1318,7 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
     font-weight: 300;
 }
 
-.team-box .overlay{
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    right: 5%;
-    bottom: 5%;
-    background: rgba(254, 213, 27, 0.6);
-    opacity: 0;
-    transition: .8s ease;
-}
+
 .team-sec .item:hover .team-box{
     cursor: pointer;
 }
@@ -1343,6 +1334,7 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
     transform: translateY(-100%);
 }
 
+/*
 .team-box:hover .team-social li {
     opacity: 1;
     visibility: visible;
@@ -1350,7 +1342,7 @@ header .header-appear .main-navigation nav .navbar-nav .nav-item .nav-link {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-}
+}*/
 
 .team-box .team-social li {
     display: inline-block;
